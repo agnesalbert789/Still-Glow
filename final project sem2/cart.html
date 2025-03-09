@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart | Still Glow Candles</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="header" id="header">
+    <div class="logo">Still Glow</div>
+    <nav class="nav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li class="shop-dropdown">
+                <a href="shop.html">Shop</a>
+                <ul class="dropdown">
+                    <li><a href="./shop.html">Candles</a></li>
+                    <li><a href="./accesories.html">Accessories</a></li>
+                    <li><a href="gift-sets.html">Gift Sets</a></li>
+                    <li><a href="limited-editions.html">Limited Editions</a></li>
+                </ul>
+            </li>
+            <li><a href="contact.html">Contact</a></li>
+            <li>
+                <a href="cart.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M6 6h15l1 9H6L5 2H2"></path>
+                        <circle cx="9" cy="21" r="1"></circle>
+                        <circle cx="18" cy="21" r="1"></circle>
+                    </svg>
+                    <span class="cart-count">0</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <section class="cart-section">
+        <h1>Shopping Cart</h1>
+        <div class="cart-container">
+            <table class="cart-table" id="cart-items">
+                <thead>
+                <tr>
+                    <th>Product</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <th>Subtotal</th>
+                    <th></th>
+                </tr>
+                </thead>
+            </table>
+            <div class="cart-summary">
+                <h2>Cart Summary</h2>
+                <p>Subtotal: $<span id="subtotal">0.00</span></p>
+                <p>Tax (13%): $<span id="tax">0.00</span></p>
+                <p>Total: $<span id="total">0.00</span></p>
+                <button class="checkout-btn">Proceed to Checkout</button>
+            </div>
+        </div>
+    </section>
+</main>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fresh Citrus - Still Glow Candles</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="header" id="header">
+    <div class="logo">Still Glow</div>
+    <nav class="nav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li class="shop-dropdown">
+                <a href="shop.html">Shop</a>
+                <ul class="dropdown">
+                    <li><a href="shop.html">Candles</a></li>
+                    <li><a href="accesories.html">Accessories</a></li>
+                    <li><a href="gift-sets.html">Gift Sets</a></li>
+                    <li><a href="limited-editions.html">Limited Editions</a></li>
+                </ul>
+            </li>
+            <li><a href="contact.html">Contact</a></li>
+            <li>
+                <a href=cart.html>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M6 6h15l1 9H6L5 2H2"></path>
+                        <circle cx="9" cy="21" r="1"></circle>
+                        <circle cx="18" cy="21" r="1"></circle>
+                    </svg>
+                    <span class="cart-count">0</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section class="flavour-section">
+        <div class="flavour-image">
+            <img src="images/Clean%20Citrus%20-%20450g%20-%20Organic%20&%20Vegan%20Scented%20Candles%20_%20Ocoee%20House.jpeg.jpg" alt="Fresh Citrus Candle">
+        </div>
+        <div class="flavour-content">
+            <h1>Fresh Citrus</h1>
+            <p>$19.99</p>
+            <p>Invigorate your senses with the uplifting aroma of our Citrus Candle, expertly blended to capture the refreshing essence of citrus fruits. The zesty scent of citrus essential oils boosts energy, enhances mood, and creates a lively ambiance, perfect for revitalizing your home or office. Let the vibrant glow and revitalizing aroma of our Citrus Candle energize your space, uplifting your spirit and inspiring creativity</p>
+            <button class="purchase-btn">Purchase Now</button>
+            <button class="add-to-cart-btn">Add to Cart</button>
+            <button class="add-to-wishlist-btn">Add to Wishlist</button>
+            <p id="add-to-cart-message" style="display: none;">Added to Cart!</p>
+            <p id="add-to-wishlist-message" style="display: none;">Added to Wishlist!</p>
+            <div class="feedback-popup" id="feedback-popup">
+                <div class="feedback-content">
+                    <span class="close-btn">&times;</span>
+                    <h2>Leave a Review</h2>
+                    <form id="review-form">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name"><br><br>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email"><br><br>
+                        <label for="review">Review:</label>
+                        <textarea id="review" name="review"></textarea><br><br>
+                        <input type="submit" value="Submit Review">
+                        <p id="review-submitted" style="display: none;">Review Submitted!</p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="product-reviews-section">
+        <h2>Customer Reviews</h2>
+        <div class="review">
+            <p>"I love this candle! The scent is so uplifting and refreshing. I light it every morning to start my day off right."</p>
+            <p>- Emily R.</p>
+        </div>
+        <div class="review">
+            <p>"This candle is amazing! The quality is top-notch and the fragrance is incredible. I've already ordered another one!"</p>
+            <p>- David K.</p>
+        </div>
+
+        <!-- Suggested Products Section -->
+
+        <section class="suggested-products-section">
+            <h2>Suggested Products</h2>
+            <div class="suggested-products-container">
+                <!-- Suggested Product 1 -->
+                <div class="suggested-product">
+                    <a href="Lavender.html">
+                        <img src="./images/Lavender%20Cedar%20Candle%20-%20Amber%20-3%20Wick%20Jar.jpeg.jpg" alt="Lavender">
+                        <h3>Lavender</h3>
+                        <p>$19.99</p>
+                    </a>
+                </div>
+
+                <!-- Suggested Product 2 -->
+                <div class="suggested-product">
+                    <a href="Vanilla.html">
+                        <img src="./images/Cashmere%20and%20Vanilla%20Soy%20Candle,%20Clear%20Jar%20-%209oz.jpeg.jpg" alt="Vanilla">
+                        <h3>Vanilla</h3>
+                        <p>$29.99</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <button class="feedback-btn">Leave Feedback</button>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2024 Still Glow Candles. Crafted with love.</p>
+    <p><a href="#">Instagram</a> | <a href="#">Facebook</a></p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
